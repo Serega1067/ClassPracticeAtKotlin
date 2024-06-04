@@ -1,5 +1,5 @@
 interface ValueChangeListener {
-    fun onNewValue(num: Int)
+    fun onNewValue(number: Int)
 }
 
 public final class Holder private constructor(number: Int) {
@@ -12,7 +12,7 @@ public final class Holder private constructor(number: Int) {
     var listener: ValueChangeListener? = null
 
     companion object {
-        const val DEFAUlT_NUMBER = -1
+        const val DEFAULT_NUMBER = -1
         fun createHolder(defaultNumber: Int): Holder {
             return Holder(defaultNumber)
         }

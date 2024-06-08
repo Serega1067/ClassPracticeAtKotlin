@@ -3,6 +3,22 @@ fun printOperationResult(operation: Operation) {
     println(result)
 }
 
+sealed interface Operation {
+    fun calculate(): Double
+}
+
+class Value(val value: Double) : Operation {
+    override fun calculate(): Double = value
+}
+
+class Multiply(val left: Operation, val right: Operation) : Operation {
+    override fun calculate(): Double = left.calculate() * right.calculate()
+}
+
+class Plus(val left: Operation, val right: Operation) : Operation {
+    override fun calculate(): Double = left.calculate() + right.calculate()
+}
+
 fun main() {
     printOperationResult(
         Plus(

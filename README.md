@@ -10,6 +10,10 @@ on the screen.
 To build a hierarchy of classes in such a way that after executing  
 the main function, the correct result of calculating 3 formulas is output.
 
+## Task 2.2. Class hierarchy.
+Another way to solve the Task2 problem is to declare classes in the 
+body of the sealed interface.
+
 ## Homework.
 0. We take the homework solution code from the previous workshop  
 as a basis and refine it.

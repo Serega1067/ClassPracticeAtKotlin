@@ -40,3 +40,12 @@ b. Display the resulting instance of Command
 c. If the isValid for the command return false, output help. If true,  
 we process the command inside when.
 
+## An application with recipes.
+Select entities.  
+Define properties.  
+Endow an entity with actions.  
+
+In this application there will be a list of dishes divided into categories.  
+There will be cooking instructions for the recipe. You can add it to your  
+favorites or send it to someone from your contacts.
+
